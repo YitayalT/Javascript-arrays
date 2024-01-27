@@ -51,3 +51,10 @@ const ages = [23, 6, 12, 34, 56, 78, 54,32, 43,16, 19, 52]
 
 // const sortedAges = ages.sort((a , b ) => a -b)
 // console.log(sortedAges);
+
+const ageSum = ages.reduce((total, age) => total + age , 0)
+console.log(ageSum);
+
+const totalYearsOfCompany = comapnies.reduce((total, company) => total + (company.end - company.start), 0)
+
+console.log("Total years of all company is: ", totalYearsOfCompany);
